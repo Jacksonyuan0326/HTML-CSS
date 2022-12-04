@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!--文档类型声明，作用告诉浏览器使用的是哪个html的版本-->
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--标题标签-->
+<!--自动转行和加粗-->
+<h1>This is some basic Web Stru</h1>
+<h2>h2</h2>
+<h3>h3</h3>
+<h4>h4</h4>
+<h5>h5</h5>
+<h6>h6</h6>
+
+
+<!--段落-->
+<!--会自动换行，会间隔一段空白-->
+<p><strong>This is the Day 01 of HTML study</strong></p>
+
+
+<!--换行-->
+</br>
+<!--水平线/下划线-->
+</hr>
+<u></u>
+<!--倾斜-->
+<em></em>
+<i></i>
+<!--删除线-->
+<del></del>
+<s></s>
+<!--加粗-->
+<strong></strong>
+<b></b>
+
+<!--table-->
+<!--caption是表格大标题，th是表头单元格，caption书写在table标签内部，th标签书写在tr内部-->
+<!--rowspan和colspan只保留最上的和最左的删除其他的，不能跨结构合并-->
+<table border="2">
+    <caption><b>transcript</b></caption>
+    <thead>
+        <tr>
+            <th>name</th>
+            <th>grade</th>
+            <th>comments</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Jackson</td>
+        <td>100</td>
+        <td>N/A</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td>Summary</td>
+        <td>111</td>
+        <td>N/A</td>
+    </tr>
+    </tfoot>
+</table>
+
+<br>
+<!--表单-->
+<!--表单中的name表示相同分组-->
+<p>Please enter your username</p>
+    username: <input type="text" placeholder="Please enter your username">
+    <br>
+    password: <input type="password" placeholder="Please enter your password">
+<!--表单中name相同属性表示一组中只能一个被选中-->
+<!--checked表示是默认选中-->
+<p>Please select your gender.</p>
+    Gender: <input type="radio" name = "gender" checked>Male <input type="radio" name ="gender">female
+<br>
+<br>
+<!--单选框-->
+<input type = "radio">Do you want to sign up for latest newspaper and weekly flyer?
+<br>
+<br>
+<!--多选框-->
+Please select which area(s) you have interest into?<br>
+<input type="checkbox" value="sleep" name = "hobby">sleep<br>
+<input type="checkbox" value="reading" name = "hobby">read<br>
+<input type="checkbox" value="coding" name = "hobby">coding<br>
+<input type="checkbox" value="chatting" name = "hobby">chatting<br>
+<br>
+<br>
+<!--上传文件,重置，普通按钮（结合js）-->
+<!--提交和重置需要在“表单域”中,action中是以后被提交的地址-->
+<form action="">
+<input type="file" multiple>Please choose your files.
+<input type="submit">
+<input type="reset">
+<input type="button" value="register">
+</form>
+<br>
+
+<!--下拉表单-->
+<select>
+    <option selected>Vancouver</option>
+    <option>Burnaby</option>
+    <option>Coquitlam</option>
+    <option>Surrey</option>
+    <option>North Vancouver</option>
+    <option>West Vancouver</option>
+    <option>Richmond</option>
+</select>
+<br>
+<br>
+<br>
+<!--文本域-->
+<textarea name="comments" cols="100" row="50"></textarea>
+
+<!--表单的标签-->
+Gender:
+<input type="radio" name="gender" id="male"> <label for="male">MALE</label>
+<input type="radio" name="gender" id="female"> <label for="female">MALE</label>
+<!--第二种方法-->
+<label><input type="radio" name="gender">female</label>
+
+<!--语义化标签-->
+<!--无语义标签-->
+<div>yy</div>
+<div>Jackson</div>
+<span>111</span>
+<span>222</span>
+
+<!--example1-->
+<table border="1" width="400">
+    <caption><b>Recently order</b></caption>
+    <thead>
+    <tr>
+        <th>Order Number</th>
+        <th>Content</th>
+        <th>Date</th>
+        <th>Amount</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td rowspan="2">12323455</td>
+        <td>Meat</td>
+        <td>12-02-2022</td>
+        <td>$11</td>
+    </tr>
+    <tr>
+        <td>Cabbage</td>
+        <td>12-02-2022</td>
+        <td>$5</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td>Summary</td>
+        <td colspan="2">total</td>
+    </tr>
+    </tfoot>
+</table>
+<!--example2-->
+<h1>Register for SFU Snap</h1><hr>
+<form action="">
+    username: <input type="text" placeholder="Please enter username">
+    <br>
+    <br>
+    Gender:<label><input type="radio" name="gender"checked>MALE</label>
+    <label><input type="radio" name="gender">FEMALE</label>
+    <br>
+    <br>
+    City:
+    <select>
+        <option selected>Vancouver</option>
+        <option>Burnaby</option>
+        <option>Coquitlam</option>
+        <option>Surrey</option>
+        <option>North Vancouver</option>
+        <option>West Vancouver</option>
+        <option>Richmond</option>
+    </select>
+    <br><br>
+    Your favor:
+    <input type="checkbox">twink
+    <input type="checkbox">olderr
+    <br><br>
+    Comments:
+    <textarea name="" cols="80" rows="20"></textarea>
+    <br>
+    <h3>I acknowledge</h3>
+    <ul>
+        <li>Above 19</li>
+        <li>Don't sell privacy</li>
+    </ul>
+    <input type="submit">
+    <input type="button" value="Reset">
+    <button value="Register"></button>
+
+
+</form>
+
+</body>
+</html>

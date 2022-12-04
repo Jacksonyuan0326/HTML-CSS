@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "keywords" content="Jackson Yuan Website">
+    <meta name = "descpition" content="This is the website created by Jackson Yuan, there are some information.">
+    <title>Jackson Yuan Website</title>
+    <style >
+        @import url("../CSS/First draft/style.css");
+    </style>
+</head>
+<body>
+<!--使用name作为标记-->
+<a name = "top">顶部</a>
+Hey, this is Jackson Yuan.
+<h1>This is 标题标签</h1>
+<p>This is 段落标签</p>
+This is 换行标签<br/>
+这是水平线<hr/>
+<strong>这是加粗</strong>
+<em>这是斜体</em>
+空&nbsp;格
+<!--../表示上一级目录,title表示悬停在图片上的文字-->
+<img src="../../resource/image/Jackson.png" alt="Jackson的头像" title="Jackson">
+<!--a+tab直接生成链接标签-->
+<!--href: 必填表示要跳到哪个界面-->
+<!--ctrl+d: 复制上一行-->
+<!--target表示窗口在哪里打开
+_blank在新标签页打开
+_self在自己标签页打开-->
+<a href="https://www.google.ca/"target="_blank">点击跳转到Google</a>
+<!--锚链接-->
+<!--1. 需要一个锚标记
+    2. 跳转到锚标记
+    3. 使用#回到锚标记-->
+<!--href可以等于其他界面甚至再加#top-->
+<a href="#top">回到顶部</a>
+<!--功能性链接-->
+<!--邮件链接: mail to:
+    QQ链接: -->
+<a href="mailto:yya216@sfu.ca">点击发送邮件</a>
+<!--有序列表
+    引用范围:问答,试卷-->
+<ol>
+    <li>Java</li>
+    <li>C/C++</li>
+    <li>Python</li>
+    <li>HTML</li>
+    <li>SQL</li>
+</ol>
+<hr/><br/>
+<!--无序列表
+    应用范围:导航,侧边栏-->
+<ul>
+    <li>Java</li>
+    <li>C/C++</li>
+    <li>Python</li>
+    <li>HTML</li>
+    <li>SQL</li>
+</ul>
+<!--自定义列表
+    dl:是标签
+    dt:是列表名称
+    dd:是选项内容
+    应用官网:网站底部内容-->
+<dl>
+    <dt>编程语言</dt>
+    <dd>C</dd>
+    <dd>Java</dd>
+    <dd>Python</dd>
+</dl>
+<!--表格table
+    行: tr
+    列: td-->
+<table border="1px">
+    <tr>
+        <!--colspan 跨列-->
+        <td colspan="4">1-1</td>
+        <td>1-2</td>
+        <td>1-3</td>
+        <td>1-4</td>
+    </tr>
+    <tr>
+        <!--rowspan 跨行-->
+        <td rowspan="2">2-1</td>
+        <td>2-2</td>
+        <td>2-3</td>
+        <td>2-4</td>
+    </tr>
+
+</table>
+
+<!--音频和视频-->
+<!--controls控制条   autoplay自动播放-->
+    <audio src="../resource/...mp3" controls autoplay></audio>
+    <video src="../resource/...mp4" controls autoplay></video>
+
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+/*!*<!--后代选择器-->*!*/
+/*    body p{*/
+/*      background: bisque;*/
+/*    }*/
+/*    !*子代选择器*!*/
+/*    body>p{*/
+/*      background: red;*/
+/*    }*/
+/*  !*  兄弟选择器*!*/
+/*  .active+p{*/
+/*    background: #0eafaf;*/
+/*  }*/
+/*  !*ul的第一个子元素*!*/
+/*    ul li:first-child{*/
+
+/*    }*/
+  /*只选中p1；选中父级元素的第一个child*/
+/*选中当前p元素的父级元素，选中父级元素的第一个，并且这个元素是当前元素才会生效*/
+
+    ul li:first-child{
+      background: red;
+    }
+    p:nth-child(1){
+      background: #5ea6a6;
+    }
+    p:nth-of-type(1){
+      background: bisque;
+    }
+  </style>
+</head>
+<body>
+<h1>h1</h1>
+<p>p1</p>
+<p>p2</p>
+<p>p3</p>
+<ul>
+  <li>
+    <p class="active">p4</p>
+  </li>
+  <li>
+    <p>p5</p>
+  </li>
+  <li>
+    <p>p6</p>
+  </li>
+</ul>
+
+</body>
+</html>
