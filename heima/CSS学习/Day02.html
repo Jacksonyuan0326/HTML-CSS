@@ -5,19 +5,38 @@
     <title>Title</title>
     <style>
       /*CSS注释*/
+      /*p{*/
+      /*    !*字体颜色*!*/
+      /*    color: red;*/
+      /*    !*字体大小px是像素*!*/
+      /*    font-size: 30px;*/
+      /*    !*背景颜色*!*/
+      /*    background: bisque;*/
+      /*    width: 200px;*/
+      /*    height: 100px;*/
+      /*}*/
+      /*<!--    类选择器-->*/
       p{
-          /*字体颜色*/
-          color: red;
-          /*字体大小px是像素*/
           font-size: 30px;
-          /*背景颜色*/
-          background: bisque;
-          width: 200px;
-          height: 100px;
+      }
+      .red{
+          color: #026969;
+      }
+      .size{
+          font-size: 40px;
+      }
+      #two{
+          background: chocolate;
       }
     </style>
+
+
+    <link rel="stylesheet" href="#">
 </head>
 <body>
     <p>This is p</p>
+    <div class = "red size">This is p</div>
+    <div style="background: red;font-size: 30px">This is div</div>
+    <div id="two">This is id</div>
 </body>
 </html>
